@@ -1,4 +1,9 @@
-#include "string_functions.h"
+#include <string>
+#include <typeinfo>
+#include <iostream>
+#include <vector>
+
+using namespace std;
 
 bool check_in(string txt_1, string txt_2) {
     string txt = "";
@@ -29,3 +34,4 @@ void split(vector<string> &arr, string line, char space = ' ') {
     }
     if (txt != "") arr.push_back(txt);
 }
+
